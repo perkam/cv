@@ -1,0 +1,50 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% One-page layout experiment: compact skills and education band, full-width experience.
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.0cm, footskip=.5cm}
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\name{Kacper}{Kamiński}
+\position{DevOps Engineer{\enskip\cdotp\enskip}AWS Infrastructure{\enskip\cdotp\enskip}CI/CD}
+\address{Warsaw, Poland}
+\email{kacper@kaminskidev.com}
+\homepage{kaminskidev.com}
+\github{perkam}
+\linkedin{kaminski-kacper}
+
+\begin{document}
+
+\makecvheader
+
+% Compact two-column information band; keep experience at full page width.
+\noindent
+\begin{minipage}[t]{0.63\textwidth}
+  \vspace{0pt}
+  \cvsection{Core Skills}
+  \par
+  \begin{cvparagraph}
+    \textbf{Cloud \& IaC:} AWS, Linux, Terraform, Terragrunt, Ansible, Packer, Kubernetes (Rancher; k3s homelab)\\
+    \textbf{CI/CD \& Observability:} Jenkins, Job DSL, GitHub Actions, CloudWatch, Prometheus, Grafana\\
+    \textbf{Automation:} Bash, Ruby, Groovy
+  \end{cvparagraph}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}
+  \vspace{0pt}
+  \cvsection{Education}
+  \par
+  \begin{cvparagraph}
+    \textbf{B.Eng. Computer Science}\\
+    Warsaw University of Technology\\
+    2015--2019
+  \end{cvparagraph}
+\end{minipage}
+
+\input{cv/experience.tex}
+
+\end{document}

@@ -1,0 +1,147 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,edge,right]{./resume/small_photo2.jpg}
+\name{Kacper}{Kamiński}
+%\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+\address{Wrocławska 27, 05-400 Otwock, Poland}
+
+\mobile{(+48) 669-285-903}
+\email{kacper@kaminskidev.com}
+%\homepage{www.posquit0.com}
+\github{lampo100}
+%\linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Scandit Warsaw Recruitment Team}
+  {Scandit Sp. z.o.o\\ Koszykowa 61\\00-667 Warsaw, Poland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Internship application for Machine Learning Intern}
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\vspace{-1mm}
+\makecvfooter
+  {}
+  {I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the Personal Data Protection Act as of 29 August 1997, consolidated text: Journal of Laws 2016, item 922 as amended.}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+During the job fair at my Faculty I was very excited about getting a chance to see your product in action, and also to speak with \\Mr Christof about your plans to establish a new branch in Warsaw.
+
+Immediately, I knew that I've found a company, where my passion for machine learning and long hours put into studying it could be useful.
+\lettersection{Why Me?}
+
+As a soon to be graduate student, I specially chose machine learning and deep learning as a thing, that would be the core of my future career. For a long time, I have been fascinated by all the exciting possibilities that these fields of computer science could bring into our lives.
+
+In order to be one of the people making these changes possible, I dug deeper into these topics with:
+\begin{itemize}
+\item{Taking many courses at my faculty that deal with ML and DL, such as: \textbf{Machine Learning Basics}, \textbf{Knowledge Discovery Methods}, \textbf{Biometric Authentication and Identification} but also on-line courses such as \textbf{Andrew Ng's Machine Learning course} or \textbf{Stanford's CS231n:  Convolutional Neural Networks for Visual Recognition}.}
+\item{Extensive extra-curricular reading of articles and books about AI, image recognition, data regression and others.}
+\item{Creating many smaller or bigger projects, such as simple implementation of neural network in Python or CIFAR-10 image classifier, in order to use all this theory in practice.}
+\end{itemize}
+
+\lettersection{Why Scandit?}
+Scandit products show me, that your company also believes in using new technologies 
+to improve existing solutions and doing it in a way, that many people would not have thought about.
+
+Also, after talking with one of your co-founders, I have gotten a feeling, that working for you would not be a mere clock-punching, but rather a great opportunity to grow as a machine learning engineer.
+
+I would love to put my passion and skills to work for you during the internship and possibly even after that. \\Can we schedule a call or a meeting to discuss it?
+
+Thank you for your time. I look forward to hearing from you.
+
+\end{cvletter}
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
