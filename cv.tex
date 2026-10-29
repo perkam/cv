@@ -25,6 +25,8 @@
 \renewcommand{\acvHeaderAfterSocialSkip}{4mm}
 \renewcommand{\acvSectionTopSkip}{2mm}
 \renewcommand{\acvSectionContentTopSkip}{2mm}
+\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{30pt}{1em}\headerfontlight\color{graytext} #1}}
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{30pt}{1em}\headerfont\bfseries\color{text} #1}}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -86,7 +88,7 @@
   \vspace{0pt}
   \cvsection{Core Skills}
   \par
-  \vspace{1mm}
+  \vspace{2mm}
   \begin{cvparagraph}
     \textbf{Cloud \& IaC:} AWS, Linux, Terraform, Terragrunt, Ansible, Packer, Kubernetes (Rancher; k3s homelab)\\
     \textbf{CI/CD \& Observability:} Jenkins, Job DSL, GitHub Actions, CloudWatch, Prometheus, Grafana\\
@@ -97,7 +99,7 @@
   \vspace{0pt}
   \cvsection{Education}
   \par
-  \vspace{1mm}
+  \vspace{2mm}
   \begin{cvparagraph}
     \textbf{B.Eng. Computer Science}\\
     Warsaw University of Technology\\
